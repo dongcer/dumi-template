@@ -13,7 +13,8 @@
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
     },
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
   },
   "exclude": [
     "node_modules",
@@ -23,7 +24,12 @@
     "typings",
     "**/__test__",
     "test",
-    "tests",
-    "docs"
+    "docs",
+    "tests"
+  ],
+   "include": [
+    "src",
+    "typed-css.d.ts",
+    "typings.d.ts"//配置的.d.ts文件
   ]
 }
